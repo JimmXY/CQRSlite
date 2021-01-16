@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net5.0</TargetFrameworks>
+    <AssemblyName>NDS.Libraries.CQRSlite</AssemblyName>
+    <RootNamespace>NDS.Libraries.CQRSlite</RootNamespace>
+    <Description>My modified version of - A lightweight framework to help write CQRS and Eventsourcing applications in C#</Description>
+    <Copyright>Copyright Hariharan Arunachalam</Copyright>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageId>NDS.Libraries.Architecture.CQRSlite</PackageId>
+    <PackageTags>CQRS;Eventsourcing;queries;commands;libraries</PackageTags>
+    <Version>0.0.1</Version>
+    <PackageProjectUrl>https://github.com/JimmXY/CQRSlite</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/JimmXY/CQRSlite</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IsPackable>true</IsPackable>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <BaselineAllAPICompatError>true</BaselineAllAPICompatError>
+    <AdditionalApiCompatOptions>--exclude-non-browsable --exclude-compiler-generated</AdditionalApiCompatOptions>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageIcon>logo.png</PackageIcon>
+    <authors>Hariharan Arunachalam; Gaute Magnussen (source)</authors>
+    <owners>Hariharan Arunachalam</owners>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="5.0.0" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  
+</Project>
