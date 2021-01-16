@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net5.0</TargetFrameworks>
+    <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>NDS.Libraries.CQRSlite</AssemblyName>
     <RootNamespace>NDS.Libraries.CQRSlite</RootNamespace>
     <Description>My modified version of - A lightweight framework to help write CQRS and Eventsourcing applications in C#</Description>
