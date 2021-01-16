@@ -1,6 +1,7 @@
 ﻿using CQRSlite.Domain.Exception;
 using CQRSlite.Events;
 using CQRSlite.Infrastructure;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,7 +77,7 @@ namespace CQRSlite.Domain
                     if (e.Id != Id && Id != default)
                     {
                         throw new EventIdIncorrectException(e.Id, Id);
-                    } 
+                    }
                     ApplyEvent(e);
                     Id = e.Id;
                     Version++;
